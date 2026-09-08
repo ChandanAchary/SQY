@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas — Square Yards (Local Clone)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== LOGIN ===================== -->
+<div id="login">
+  <div class="art">
+    <svg viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#1c3a5e" stroke-width="1" fill="none" opacity=".7">
+        <path d="M-50 250 Q400 180 750 300 T1450 260"/>
+        <path d="M-50 520 Q350 620 780 500 T1450 560"/>
+        <path d="M200 -50 Q300 400 250 850"/>
+        <path d="M700 -50 Q650 350 780 850"/>
+      </g>
+      <g stroke="#e07a5f" stroke-width="1.5" fill="none" opacity=".55"><path d="M500 -50 Q560 400 470 850"/></g>
+      <g stroke="#2ecc71" stroke-width="1.5" fill="none" opacity=".45"><path d="M-50 640 Q450 560 900 660 T1450 620"/></g>
+      <g stroke="#f5b942" stroke-width="1.2" fill="none" opacity=".5"><path d="M-50 300 Q500 260 950 340 T1450 300"/></g>
+      <g fill="#4db6e6"><circle cx="250" cy="300" r="3"/><circle cx="500" cy="240" r="3"/><circle cx="780" cy="300" r="3"/><circle cx="470" cy="470" r="3"/><circle cx="900" cy="660" r="3"/></g>
+      <rect x="330" y="60" width="180" height="180" fill="none" stroke="#2a5a8a" opacity=".4" transform="rotate(12 420 150)"/>
+      <circle cx="420" cy="150" r="7" fill="none" stroke="#4db6e6" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="left"><div class="tagline">A market intelligence terminal for live client conversations — every market claim grounded in visible data.</div></div>
+  <div class="right">
+    <form class="login-card">
+      <div class="brand brand-slot"></div>
+      <h2>Sign in to Start Your Session</h2>
+      <div class="field"><input id="empId" type="text" placeholder="Employee ID" value="SQY63334"></div>
+      <div class="field"><input id="pwd" type="password" placeholder="Password" value="••••••••"></div>
+      <button class="btn-login" id="loginBtn" type="submit">Login</button>
+      <div class="login-note">Local clone · no real authentication.<br>Password resets are handled in Beats.</div>
+    </form>
+  </div>
+</div>
+
+<!-- ===================== APP ===================== -->
+<div id="app" hidden>
+  <div class="topbar" id="topbar"></div>
+  <div class="body" id="body"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
